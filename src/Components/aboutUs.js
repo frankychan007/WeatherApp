@@ -1,9 +1,15 @@
-import React, {useEffect, useState} from 'react';
-import {FlatList, TouchableOpacity, StyleSheet, Text, View} from 'react-native';
-import {useSelector, useDispatch} from 'react-redux';
+import React, { useEffect, useState } from 'react';
+import {
+  FlatList,
+  TouchableOpacity,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
+import { useSelector, useDispatch } from 'react-redux';
 
-const Example = ({navigation}) => {
-  const count = useSelector(state => state.counts.count);
+const Example = ({ navigation }) => {
+  const count = useSelector((state) => state.counts.count);
   const dispatch = useDispatch();
 
   return (

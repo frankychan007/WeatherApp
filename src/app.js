@@ -1,8 +1,8 @@
 import React from 'react';
-import {Provider} from 'react-redux';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { Provider } from 'react-redux';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import configureStore from './Stores/store';
 import Home from './Components/home';
@@ -19,7 +19,7 @@ const HomeStackScreen = () => {
       <HomeStack.Screen
         name="Home"
         component={Home}
-        options={{title: 'Weather App'}}
+        options={{ title: 'Weather App' }}
       />
       <HomeStack.Screen name="Details" component={CityDetail} />
     </HomeStack.Navigator>
@@ -32,7 +32,7 @@ const AccountStackScreen = () => {
       <AccountStack.Screen
         name="Home"
         component={AboutUs}
-        options={{title: 'About Us'}}
+        options={{ title: 'About Us' }}
       />
     </AccountStack.Navigator>
   );
@@ -48,12 +48,12 @@ const App: () => React$Node = () => {
           <Tab.Screen
             name="Home"
             component={HomeStackScreen}
-            options={{title: 'Home'}}
+            options={{ title: 'Home' }}
           />
           <Tab.Screen
             name="Account"
             component={AccountStackScreen}
-            options={{title: 'About'}}
+            options={{ title: 'About' }}
           />
         </Tab.Navigator>
       </NavigationContainer>

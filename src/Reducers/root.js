@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 import * as types from '../Actions/types';
 
 const initialState = {
@@ -8,7 +8,7 @@ const initialState = {
 const counts = (state = initialState, action) => {
   switch (action.type) {
     case types.GET_CITY_LIST_REQUESTED:
-      return {...state, loading: true};
+      return { ...state, loading: true };
 
     case types.GET_CITY_LIST_SUCCESS:
       return {
