@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const Example = () => {
   return (
     <View style={styles.container}>
-      <Text>Developed By Frank Chen</Text>
+      <Text>Developed By Franky Chen</Text>
     </View>
   );
 };
