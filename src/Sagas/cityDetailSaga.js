@@ -2,7 +2,7 @@ import { call, put, takeEvery } from 'redux-saga/effects';
 import * as types from '../Actions/types';
 
 const getWeatherCityDetail = ({ location }) => {
-  return fetch('http://localhost:3000/city', {
+  return fetch('http://localhost:3000/cityDetail', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
