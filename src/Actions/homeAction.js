@@ -6,9 +6,9 @@ export function requestCityList() {
   };
 }
 
-export function requestCityDetail(cityId) {
+export function requestCityDetail(location) {
   return {
     type: types.GET_CITY_DETAIL_REQUESTED,
-    cityId,
+    location,
   };
 }

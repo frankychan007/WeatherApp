@@ -1,6 +1,7 @@
 import { all } from 'redux-saga/effects';
-import mySaga from './sagas';
+import cityListSaga from './cityListSaga';
+import cityDetailSaga from './cityDetailSaga';
 
 export default function* rootSaga() {
-  yield all([mySaga()]);
+  yield all([cityListSaga(), cityDetailSaga()]);
 }
