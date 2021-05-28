@@ -18,14 +18,17 @@ After setting up the environment, using node (version >= 10), run following comm
 
     $ yarn install
 
+or use npm:
+
+    $ npm install
+
 ## Running the Application
 
-(Please get the backend server ready before running the application)
+(Please get the [Backend Server](https://github.com/frankychan007/WeatherServer) ready before running the application)
 
 ### Run on ios:
 
-Open the `/ios/WeatherApp.xcworkspace` with Xcode, select desired device. [Click Here](https://reactnative.dev/docs/0.62/running-on-device) for further informations.
-Select target device then hit the "run" button.
+Open the `/ios/WeatherApp.xcworkspace` with Xcode, select target device then hit the "run" button. [Click Here](https://reactnative.dev/docs/0.62/running-on-device) for further informations.
 
 ### Run on android:
 
